@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "ticketType": "ONE TIME TICKET",
+        "price": "100",
+        "image": "https://i.ibb.co/Np7BydB/e-ticket-1.png"
+    },
+
+    {
+        "id":2,
+        "ticketType": "ONE DAY PASS",
+        "price": "500",
+        "image": "https://i.ibb.co/r0YPRFw/e-ticket-2.png"
+    },
+
+    {
+        "id":3,
+        "ticketType": "MONTHLY PASS",
+        "price": "1500",
+        "image": "https://i.ibb.co/6gpxkZc/e-ticket-3.png"
+    },
+
+    {
+        "id":4,
+        "ticketType": "ANNUAL PASS",
+        "price": "9000",
+        "image": "https://i.ibb.co/v1XYnVW/e-ticket-4.png"
+    }
+    
+]
