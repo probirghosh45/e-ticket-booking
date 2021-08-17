@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './TicketDetails.css'
 
 const TicketDetails = (props) => {
@@ -12,8 +13,9 @@ const TicketDetails = (props) => {
         <Card.ImgOverlay>
           <Card.Title as={'h1'} className="pb-2 card__title">{ticketType}</Card.Title>
            <Button 
-           className="button__style" size="lg"    
-           style={{borderRadius: '30px'}}>
+           className="button__style" size="lg"   as={Link} to='/destination'
+           style={{borderRadius: '30px'}}
+           >
            Buy Now</Button>
            
            <Card.Text as={'h1'} className="text-center mt-5 card__text__style">&#2547;{price}</Card.Text>
