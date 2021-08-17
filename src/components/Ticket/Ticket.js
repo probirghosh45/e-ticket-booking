@@ -10,7 +10,7 @@ const Ticket = () => {
 
   return (
       <>
-        <Container className="mt-5 container__style">
+        <Container className="mt-5 pt-3 container__style">
             <Row>
                 {ticket.map( ticketQuantity => <TicketDetails key={ticket.id} ticket={ticketQuantity} />)
                 }

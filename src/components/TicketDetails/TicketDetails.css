@@ -1,6 +1,6 @@
 .card__style{
     width: 250px;
-    /* background: transparent; */
+    background: transparent;
     border: 0px;
     margin-bottom: 20px;
     color: white;
@@ -9,3 +9,35 @@
 .card__title{
     font-weight: bold;
 }
+
+.card__text__style{
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+/* .button__style{
+    border-radius: 40px;
+}  */
+    
+  
+.button__style {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+.button__style {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   display: block;
+ }
+
+ .button__style:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+    
