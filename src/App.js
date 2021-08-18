@@ -11,9 +11,10 @@ export const UserContext=createContext();
 function App() {
 
   const [search, setSearch] = useState({});
+  const [ticket, setTicket] = useState([])
 
   return (
-    <UserContext.Provider value={{search,setSearch}} >
+    <UserContext.Provider value={{search,setSearch,ticket,setTicket}} >
       <Router>
         <Header/>
         <Switch>

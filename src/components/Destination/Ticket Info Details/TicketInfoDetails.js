@@ -1,10 +1,13 @@
 import React, { useContext } from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { UserContext } from '../../../App';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 const TicketInfoDetails = () => {
  
-   const {search,setSearch} = useContext(UserContext)
+   const {search,setSearch,ticket} = useContext(UserContext)
 
     return (
         <Container>
@@ -13,11 +16,11 @@ const TicketInfoDetails = () => {
                     <Col className="bg-primary text-white" style={{borderRadius:"10px"}}>
                       <Card.Body>
                          <Card.Title>
-                          {/* <i className="bi bi-geo-alt-fill"></i> */}
+                          <FontAwesomeIcon className="me-2" icon={faMapMarkerAlt} />
                           {search.pickForm}
                         </Card.Title> 
                         <Card.Title>
-                          {/* <i className="bi bi-geo-alt-fill"></i> */}
+                        <FontAwesomeIcon className="me-2" icon={faMapMarkerAlt} />
                           {search.pickTo}
                         </Card.Title> 
                       </Card.Body>
@@ -30,7 +33,7 @@ const TicketInfoDetails = () => {
                     <Col className="d-flex align-items-center" sm="8" md="9">
                       <Card.Body >
                           <Card.Title className="d-inline">Ticket 1</Card.Title>
-                          <Card.Title className="d-inline ps-5">100</Card.Title>
+                          <Card.Title className="d-inline ps-5">&#2547;{ticket}</Card.Title>
                       </Card.Body>
                     </Col>
                 </Row>
@@ -41,7 +44,7 @@ const TicketInfoDetails = () => {
                     <Col className="d-flex align-items-center" sm="8" md="9">
                       <Card.Body >
                           <Card.Title className="d-inline">Ticket 1</Card.Title>
-                          <Card.Title className="d-inline ps-5">100</Card.Title>
+                          <Card.Title className="d-inline ps-5">&#2547;{ticket}</Card.Title>
                       </Card.Body>
                     </Col>
                 </Row>
@@ -52,7 +55,7 @@ const TicketInfoDetails = () => {
                     <Col className="d-flex align-items-center" sm="8" md="9">
                       <Card.Body >
                           <Card.Title className="d-inline">Ticket 1</Card.Title>
-                          <Card.Title className="d-inline ps-5">100</Card.Title>
+                          <Card.Title className="d-inline ps-5">&#2547;{ticket}</Card.Title>
                       </Card.Body>
                     </Col>
                 </Row>

@@ -11,7 +11,7 @@ const TicketInfo = () => {
     const {register,handleSubmit,watch,formState: { errors },} = useForm();
     
 
-    const {search,setSearch} = useContext(UserContext)
+    const {search,setSearch,ticket,setTicket} = useContext(UserContext)
 
     const onSubmit = (data) => {
         console.log(data);
