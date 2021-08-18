@@ -1,0 +1,12 @@
+/* .ticket__info__style{
+    background-color: #eec2c2;
+} */
+
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+  }
