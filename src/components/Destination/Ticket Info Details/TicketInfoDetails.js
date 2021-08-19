@@ -43,7 +43,7 @@ const TicketInfoDetails = () => {
                     </Col>
                     <Col className="d-flex align-items-center" sm="8" md="9">
                       <Card.Body >
-                          <Card.Title className="d-inline">Ticket 1</Card.Title>
+                          <Card.Title className="d-inline">Ticket 2</Card.Title>
                           <Card.Title className="d-inline ps-5">&#2547;{ticket}</Card.Title>
                       </Card.Body>
                     </Col>
@@ -54,7 +54,7 @@ const TicketInfoDetails = () => {
                     </Col>
                     <Col className="d-flex align-items-center" sm="8" md="9">
                       <Card.Body >
-                          <Card.Title className="d-inline">Ticket 1</Card.Title>
+                          <Card.Title className="d-inline">Ticket 3</Card.Title>
                           <Card.Title className="d-inline ps-5">&#2547;{ticket}</Card.Title>
                       </Card.Body>
                     </Col>

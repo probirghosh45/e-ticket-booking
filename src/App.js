@@ -13,7 +13,8 @@ function App() {
 
   const [search, setSearch] = useState({});
   const [ticket, setTicket] = useState([])
- const [loggedInUser,setLoggedInUser]=useState()
+ const [loggedInUser,setLoggedInUser]=useState({});
+
   return (
     <UserContext.Provider value={{search,setSearch,ticket,setTicket,loggedInUser,setLoggedInUser}} >
       <Router>
@@ -22,12 +23,13 @@ function App() {
           <Route exact path="/" >
             <Home/>
           </Route>
-          <Route path="/destination">
-            <Destination/>
-          </Route>
           <Route path="/login">
             <Login/>
           </Route>
+          <PrivateRoute path="/destination">
+            <Destination/>
+          </PrivateRoute>
+
           <Route path="*" >
              <NoMatch/>
           </Route>
